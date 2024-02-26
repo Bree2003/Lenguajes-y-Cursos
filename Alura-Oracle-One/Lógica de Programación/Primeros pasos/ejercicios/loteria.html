@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>JUEGO DE LOTERÍA</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje) {
+        document.write(mensaje);
+        saltarLinea(); 
+    }
+
+    function sorteo(numero) {
+        var numeroPensado = Math.round(Math.random() * numero); /* siempre va a ser menor al numero */
+        return numeroPensado;
+    }
+
+    var numeroIngresado = parseInt(prompt("Ingresa un número"));
+    var numeroPensado = sorteo(numeroIngresado);
+    var numeroLoteria = parseInt(prompt("Ingresa ahora un número entre 0 y " + numeroIngresado));
+
+    if(numeroLoteria == numeroPensado) {
+        imprimir("Felicidades! Acertaste el número");
+    } else if(numeroLoteria < numeroPensado) {
+        imprimir("Cerca! El número era mayor");
+    } else if(numeroLoteria > numeroPensado) {
+        imprimir("Cerca! El número era menor");
+    }
+
+</script>

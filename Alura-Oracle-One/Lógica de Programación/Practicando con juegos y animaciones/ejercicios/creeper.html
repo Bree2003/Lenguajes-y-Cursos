@@ -1,0 +1,32 @@
+<h1>CREEPER</h1>
+
+<canvas width="350" height="300"></canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    // CABEZA
+    pincel.fillStyle = "darkgreen";
+    pincel.fillRect(0,0,350,300);
+
+    // OJOS
+    pincel.fillStyle = "black";
+    pincel.fillRect(50,60,90,90);
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(210,60,90,90);
+
+    // NARÍZ
+    pincel.fillStyle = "black";
+    pincel.fillRect(140,150,70,100);
+
+    // BOCA
+    pincel.fillStyle = "black";
+    pincel.fillRect(100,200,40,110);
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(210,200,40,110);
+
+</script>

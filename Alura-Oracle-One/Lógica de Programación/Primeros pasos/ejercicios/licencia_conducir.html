@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje) {
+        document.write(mensaje);
+        saltarLinea(); 
+    }
+
+    var edad = parseInt(prompt("Cuál es tu edad?"));
+    
+    if(edad >= 18) {
+        var tieneLicencia = prompt("Tienes licencia? Reponde S o N");
+        
+        if(tieneLicencia == "S" || tieneLicencia == "s") {
+            imprimir("Puedes conducir");
+        } else if (tieneLicencia == "N" || tieneLicencia == "n") {
+            imprimir("No puedes conducir");
+        } else {
+            imprimir("Ingresa un carácter válido");
+        }
+    } else {
+        imprimir("No tienes la edad suficiente");
+    }
+
+</script>

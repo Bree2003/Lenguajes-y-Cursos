@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+<h1>Programa calcula Índice de Masa Corporal</h1>
+
+<script>
+
+    function saltarLinea () {
+        document.write("<br>");
+    }
+
+    function imprimir (mensaje) {
+        document.write(mensaje);
+        saltarLinea();
+    }
+
+    function calcularIMC (peso, altura) {
+        imc = peso / (altura * altura);
+        return(imc); /* hay que especificar que datos va a devolver la función, en los otros imprimía directamente en el html */
+        // imprimir(" su IMC calculado es: " + imc);
+    }
+
+    var nombre = prompt("Ingrese su nombre");
+    var pesoInformado = prompt(nombre + " Ingrese peso:");
+    var alturaInformado = prompt(nombre + " ingrese altura");
+    var imc = calcularIMC(pesoInformado, alturaInformado);
+
+    imprimir(nombre + " su IMC calculado es: " + imc);
+
+    if (imc < 18.5) {
+        imprimir("Clasificación del IMC: Insuficiencia ponderal");
+    } else if (imc >= 18.5 && imc < 25.0) {
+        imprimir("Clasificación del IMC: Intervalo normal");
+    } else if (imc >= 25.0 && imc < 30.0) {
+        if (imc == 25.0) {
+            imprimir("Clasificación del IMC: Sobrepeso");
+        } else {
+            imprimir("Clasificación del IMC: Preobesidad");
+        }
+    } else if (imc >= 30.0) {
+        if (imc == 30.0) {
+            imprimir("Clasificación del IMC: Obesidad");
+        } else if (imc < 35.0) {
+            imprimir("Clasificación del IMC: Obesidad de clase I");
+        } else if (imc >= 35.0 && imc < 40.0) {
+            imprimir("Clasificación del IMC: Obesidad de clase II");
+        } else if (imc >= 40.0) {
+            imprimir("Clasificación del IMC: Obesidad de clase III");
+        }
+    }
+
+
+
+    // calcularIMC(79,1.60);
+    
+    // imprimir("El IMC de tanto tanto es: " + calcularIMC(81, 1.60));
+
+    // pesoChristian = 71;
+    // alturaChristian = 1.72;
+    // imcChristian = calcularIMC(pesoChristian, alturaChristian);
+    
+    // imprimir("EL IMC de Christian es: " + imcChristian);
+    
+    // pesoFelipe = 75;
+    // alturaFelipe = 1.73;
+    // imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe);
+
+    // imprimir("EL IMC de Felipe es: " + imcFelipe);
+    
+</script>

@@ -1,0 +1,12 @@
+p {
+    font-size: 25px;
+    color: brown;
+}
+
+.selector {
+    color: blue;
+}
+
+#selector2 {
+    color: red;
+}

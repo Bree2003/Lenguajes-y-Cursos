@@ -1,0 +1,52 @@
+/* Variable */
+:root {
+    --color-primario: #333333;
+    --color-secundario: #7e7c7c;
+}
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+header{
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+header ul {
+    list-style: none;
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* Main */
+main {
+    margin: 20px;
+}
+.article {
+    margin-bottom: 20px;
+}
+article p {
+    color: var(--color-secundario);
+}
+article button {
+    background-color: var(--color-primario);
+    border: solid var(--color-primario);
+    color: white;
+}
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
