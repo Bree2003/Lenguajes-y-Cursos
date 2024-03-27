@@ -15,6 +15,7 @@ public class Triangulo {
     private int lado1;
     private int lado2;
     private int lado3;
+    private int hipotenusa;
     public void esEquilatero(){
         if (lado1==lado2 || lado1==lado3 || lado2==lado3) {
             System.out.println("Es equilatero");

@@ -1,8 +1,10 @@
 package entidades;
 
+import padre.entidad.Usuario;
+
 import java.util.Scanner;
 
-public class Persona {
+public class Persona extends Usuario {
     //variable (datos)
     private Scanner teclado;
     private String nombre;
@@ -38,6 +40,9 @@ public class Persona {
             personaA.ingresoDatos();
             personaA.mostrarIngresos();
             personaA.mayorEdad();
+
+            Usuario u = new Usuario();
+            u.soyHijo();
         }
 
 
