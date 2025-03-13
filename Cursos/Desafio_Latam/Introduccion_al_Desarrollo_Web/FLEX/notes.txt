@@ -1,0 +1,13 @@
+Display Block
+-> un elemento de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible
+-> comportamiento por defecto
+
+Display Inline
+-> un elemento inline no comienza en una nueva linea y su ancho ocupa el tamaño minimo
+
+Display inline-Block
+-> se comporta como inline, donde puedes poner un elemento al lado de otro pero a la vez se comporta como block, dado que puedes establecer un ancho y alto
+
+Flexbox
+-> herramienta que nos permitirá alinear contenido de forma sencilla
+-> fue ideado para la construcción de layouts que contegan elementos distribuidos en filas y columnas

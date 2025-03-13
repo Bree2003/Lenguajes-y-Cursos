@@ -1,0 +1,2 @@
+node_modules
+# .env -> it's not good to push access and connection data

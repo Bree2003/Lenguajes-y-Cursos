@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>RECETAS DE ARMANDO</h1>
+
+<script>
+
+    var ingredientes = []; /* array vacío */
+    var cantidad = parseInt(prompt("Cuántos ingredientes vas a añadir?"));
+    var contador = 1;
+    
+    while(contador <= cantidad) {
+        
+        var encontrado = false;
+        
+        var ingrediente = prompt("Informe el ingrediente " + contador);
+        for(let i = 0;i < cantidad;i++) { /* length no lleva parentésis!!!! */
+            if(ingrediente == ingredientes[i]){
+                alert("Ya escribió ese ingrediente");
+                encontrado = true;
+            }
+        }
+
+        if(encontrado == false) {
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+    }
+
+    console.log(ingredientes);
+
+</script>

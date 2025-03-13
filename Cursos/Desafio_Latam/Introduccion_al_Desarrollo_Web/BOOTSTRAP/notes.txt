@@ -1,0 +1,2 @@
+Framework
+-> conjunto de conceptos, prácticas y criterios enfocados en solventar una problemática particular y común a los desarrolladores

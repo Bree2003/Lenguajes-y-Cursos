@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+<!-- conjunto de datos que estámos usando -->
+<!-- HTML
+<br>
+estoy definiendo la edad de Christian
+<br>
+JavaScript
+<br> -->
+
+<script>
+
+    function saltarLinea () { /* nombre de la función deber ser un verbo, porque realiza una acción */
+        document.write("<br>");
+    }
+
+    function imprimir (texto) {
+        document.write(texto);
+        saltarLinea();
+    }
+
+    imprimir("hola amigos");
+
+    saltarLinea();
+
+    // este código calcula las edades de Juan, Pedro y Carlos
+    
+    var anho = 2023; /* declaración e inicialización de variable */
+
+    // var saltoLinea = "<br>";
+
+    imprimir("Juan tiene: " + (anho - 2000) + " años");
+
+    // document.write("Juan tiene: " + (anho - 2000) + " años");
+    // document.write(saltoLinea);
+    saltarLinea();
+    document.write("Pedro tiene: " + (anho - 1995) + " años");
+    saltarLinea();
+    document.write("Carlos tiene: " + (anho - 2005) + " años");
+    saltarLinea();
+    
+    anho = 2020;
+    document.write("Jimena tiene: " + (anho - 2010) + " años");
+    saltarLinea();
+    document.write("Laura tiene: " + (anho - 1995) + " años");
+    saltarLinea();
+    document.write("Sofía tiene: " + (anho - 2005) + " años");
+    
+    saltarLinea();
+    var edadJimena = anho - 2010;
+    var edadLaura = anho - 1995;
+    var edadSofia = anho - 2005;
+    saltarLinea();
+    var promedio = (edadJimena + edadLaura + edadSofia) / 3;
+    saltarLinea();
+    document.write("El promedio de las edades de las tres mujeres es: " + Math.round(promedio));
+    saltarLinea();
+
+    // document.write("Juan nació en el año...");
+    // document.write("<br>");
+    // document.write(2020 - 20);
+    // document.write("<br>");
+    // document.write("<br>");
+    // document.write("Pedro nació en el año...");
+    // document.write("<br>");
+    // document.write(2020 - 25);
+    // document.write("<br>");
+    // document.write("<br>");
+    // document.write("Carlos nació en el año...");
+    // document.write("<br>");
+    // document.write(2020 - 15);
+// alert("La edad de Christian es ...");
+// alert("?");
+// document.write("La edad de Christian es ...<br>"); /* escribe en el html */
+// document.write(25); /* lo reconoce como número, no como string */
+// document.write("<br>");
+// document.write("número + número ");
+// document.write(100 + 25);
+// document.write("<br>");
+// document.write("string + número "); /* se concatenan */
+// document.write("100" + 25);
+// document.write("<br>");
+// document.write("string + string "); /* se concatenan */
+// document.write("100" + "25");
+// document.write("<br>");
+// document.write("número , número "); /* se concatenan */
+// document.write(100 , 25);
+// document.write("<br>");
+// document.write("<br>");
+// document.write("El año de nacimientos de Christian es ...");
+// document.write("<br>");
+// document.write(2020 - 29);
+// document.write("<br>");
+// document.write("<br>");
+// document.write("El promedio de edad de Juan, Pedro y Carlos es ...");
+// document.write("<br>");
+// document.write((20 + 25 + 15) /3);
+// document.write("<br>");
+// document.write("La suma de las edades de Juan, Pedro y Carlos es ... " + 20 + 25 + 15); /* es de izquierda a derecha */
+// document.write("<br>");
+// document.write("La suma de las edades de Juan, Pedro y Carlos es ... " + (20 + 25 + 15)); /* primero el paréntesis */
+// document.write("<br>");
+// document.write(20 + 25 + 15 + "La suma de las edades de Juan, Pedro y Carlos es ... ");
+// document.write("<br>");
+</script>
